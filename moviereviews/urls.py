@@ -18,7 +18,10 @@ from django.contrib import admin
 from django.urls import path
 from movie import views as movieviews
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path ('', movieviews.home),
+    path ('about/', movieviews.about),
+    
 ]
